@@ -31,9 +31,9 @@ Given the temporal nature of the data, I would dive deeper into time series anal
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|87.005073|56.107014|7569.882771|1.85931|
-|add_features|14.875099|9.503020|221.268578|0.61846|
-|hpo|14.646803|9.567152|214.528848|0.56403|
+|initial|default|default|default|1.85931|
+|add_features|default|default|default|0.61846|
+|hpo|'GBM': {'num_boost_round': 100, 'num_leaves': Int: lower=26, upper=66}|'NN_TORCH': {'num_epochs': 10, 'learning_rate': Real: lower=0.0001, upper=0.01, 'activation': Categorical\['relu', 'softrelu', 'tanh'], 'dropout_prob': Real: lower=0.0, upper=0.5}|'KNN': {}|0.56403|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
